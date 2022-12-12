@@ -1,7 +1,4 @@
-{{ if (eq .chezmoi.os "darwin") -}}
 #!/bin/bash
-
-set -eufo pipefail
 
 # ~/.macos — https://mths.be/macos
 
@@ -44,7 +41,5 @@ defaults write com.googlecode.iterm2 AlternateMouseScroll -int 1
 # Profile/Colors: Snazzy Theme
 defaults read com.googlecode.iterm2 | grep -q "Snazzy" ||
   (curl -Ls https://raw.githubusercontent.com/sindresorhus/iterm2-snazzy/main/Snazzy.itermcolors > /tmp/Snazzy.itermcolors && open /tmp/Snazzy.itermcolors)
-
-{{ end -}}
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."

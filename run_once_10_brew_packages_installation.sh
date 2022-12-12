@@ -1,7 +1,4 @@
-{{- if (eq .chezmoi.os "darwin") -}}
 #!/bin/bash
-
-set -eufo pipefail
 
 formulae=(
     autojump
@@ -16,6 +13,9 @@ formulae=(
     k3d
     helm
     kubectl
+    mkcert
+    nss
+    wget
 )
 casks=(
     firefox
@@ -41,4 +41,3 @@ brew install ${formulae[@]}
 brew install --cask ${casks[@]}
 
 brew cleanup
-{{ end }}
