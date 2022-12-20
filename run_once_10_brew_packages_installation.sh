@@ -13,6 +13,7 @@ formulae=(
     k3d
     helm
     kubectl
+    krew
     mkcert
     nss
     wget
@@ -33,6 +34,8 @@ casks=(
     mattermost
     docker
     postman
+    mos
+    monitorcontrol
 )
 
 brew update

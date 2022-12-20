@@ -34,6 +34,7 @@ export XDG_CONFIG_HOME=~/.config
 export EDITOR='micro'
 export JAVA_VERSION=17
 export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH="${PATH}:${HOME}/.krew/bin"
 
 # Load plugins
 [ -f ~/.zplug.sh ] && source ~/.zplug.sh
